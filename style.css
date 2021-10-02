@@ -1,0 +1,174 @@
+html,
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+body {
+    background: url(img/background.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.targetTitle {
+  font-size: 60px;
+  color: black;
+  margin-top: -15px;
+}
+
+.header__label {
+  color: black;
+  font-size: 30px;
+}
+
+.choose-city {
+  width: 150px;
+  background-color: #94DBEA;
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px #333;
+  padding: 20px;
+  color: black;
+}
+
+.countries {
+  width: 50px;
+  height: 50px;
+  background-color: #94DBEA;
+  font-size: 35px;
+  color:#2E7DAB ;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 0.5%;
+  margin-left: 90px;
+}
+
+.wrapper {
+   width: 420px;
+  height: 420px;
+  margin: 50px auto;
+  text-align: center;
+  border: solid 2px white;
+  font-size: 26px;
+  color: black;
+  padding: 0 20px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.imgOut {
+  width: 55px;
+  height: 55px;
+  border: solid black 1px;
+  border-radius: 50%;
+  background-color:  #ADDDEA;
+  margin: 0 auto;
+  }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+}
+
+.wind, .direct, .hum {
+  word-spacing: 10px;
+ text-align: left;
+}
+/* попытка сделать адаптивную верстку */
+@media (max-width: 970px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .targetTitle {
+    font-size: 50px;
+    margin: auto;
+  }
+  .countries {
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .targetTitle {
+    font-size: 45px;
+    margin: auto;
+  }
+  .countries {
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .targetTitle {
+    font-size: 35px;
+    margin: auto;
+  }
+  .countries {
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .targetTitle {
+    font-size: 25px;
+    margin: auto;
+  }
+  .countries {
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .targetTitle {
+    font-size: 20px;
+    margin: auto;
+  }
+  .countries {
+    margin: auto;
+  }
+
+}
